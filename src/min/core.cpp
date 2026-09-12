@@ -67,6 +67,8 @@ MIN_core::MIN_core()
 	config::osd_count = 180;
 }
 
+MIN_core::~MIN_core() = default;
+
 /****** Start the core ******/
 void MIN_core::start()
 {
@@ -88,7 +90,9 @@ void MIN_core::start()
 	}
 
 	//Initialize the GamePad
+	#ifndef __EMSCRIPTEN__
 	core_pad.init();
+	#endif
 }
 
 /****** Stop the core ******/
