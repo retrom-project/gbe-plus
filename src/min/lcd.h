@@ -50,6 +50,8 @@ class MIN_LCD
 	//Serialize data for save state loading/saving
 	bool lcd_read(u32 offset, std::string filename);
 	bool lcd_write(std::string filename);
+	unsigned state_size() const { return sizeof(lcd_stat) + sizeof(new_frame) + 0x1800 * sizeof(u32) * 2; }
+	int frame_count() const { return fps_count; }
 
 	private:
 

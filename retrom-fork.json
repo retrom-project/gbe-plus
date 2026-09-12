@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "forkRepository": "https://github.com/retrom-project/gbe-plus",
+  "defaultBranch": "retrom/g05a05e931b39",
+  "upstreamMirrorBranch": "master",
+  "upstreams": [
+    {
+      "role": "core",
+      "repository": "https://github.com/shonumi/gbe-plus",
+      "refType": "COMMIT",
+      "ref": "05a05e931b3993ff3e6316b0d841a1fb4d3ac7a7",
+      "commit": "05a05e931b3993ff3e6316b0d841a1fb4d3ac7a7"
+    }
+  ],
+  "releaseTagPattern": "^retrom-core-g05a05e931b39-r[1-9][0-9]*(-rc\\.[1-9][0-9]*)?$",
+  "adapterAbi": "gbe-pokemini-host-v1",
+  "releaseAssets": [
+    "LICENSE",
+    "gbe-pokemini.mjs",
+    "gbe-pokemini.wasm",
+    "gbe-pokemini-register.mjs",
+    "rpg-runtime-release.json"
+  ],
+  "toolchainImage": "emscripten/emsdk:4.0.10@sha256:90b757eb11fa9a0e3ce4d2d9f76d932a56018e4accc37b5a28b2783751e60eb7"
+}
